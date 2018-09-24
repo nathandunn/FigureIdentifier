@@ -9,11 +9,9 @@ class App {
     }
 
     static void main(String[] args) {
-        println new App().greeting
-        println "A"
-        def ss = new SampleScala()
-        println "B"
-        ss.doSomething()
-        println "C"
+//        def ss = new SampleScala()
+//        ss.doSomething()
+
+        new PredictionOne().runPrediction()
     }
 }
