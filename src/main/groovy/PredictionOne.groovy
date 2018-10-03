@@ -1,8 +1,8 @@
-//import org.deeplearning4j.nn.graph.ComputationGraph
-//import org.deeplearning4j.zoo.PretrainedType
+import org.deeplearning4j.nn.graph.ComputationGraph
+import org.deeplearning4j.zoo.PretrainedType
 import org.deeplearning4j.zoo.ZooModel
 import org.deeplearning4j.zoo.model.AlexNet
-import org.deeplearning4j.zoo.model.ResNet50
+//import org.deeplearning4j.zoo.model.ResNet50
 
 ////import org.deeplearning4j.zoo.model.ResNet50
 //import org.deeplearning4j.zoo.model.VGG16
