@@ -12,8 +12,8 @@ class CatDogModel extends Model {
 
 
   def loadModel: File = {
-    def model: File = new File("resources/model.zip");
-    if (!model.exists() || FileUtils.checksum(model, new Adler32()).getValue() != 3082129141l) {
+    def model: File = new File("resources/model.zip")
+    if (!model.exists() || FileUtils.checksum(model, new Adler32()).getValue != 3082129141l) {
       model.delete()
 
       def modelURL: URL = new URL(MODEL_URL)
