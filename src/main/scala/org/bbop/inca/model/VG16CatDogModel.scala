@@ -20,6 +20,7 @@ class VG16CatDogModel extends Model {
     if (modelFile == null) downloadModel
     if (computationGraph != null) return computationGraph
 
+    println( "model file "+modelFile.getAbsolutePath)
     computationGraph = ModelSerializer.restoreComputationGraph(modelFile)
     computationGraph
   }

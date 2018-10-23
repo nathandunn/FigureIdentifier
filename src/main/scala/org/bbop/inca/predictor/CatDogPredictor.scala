@@ -17,22 +17,22 @@ class CatDogPredictor extends Predictor {
 
   def predict(file: File,threshold:Double):PetType = {
 
-//    computationGraph = model.loadModel()
-//
-//    computationGraph.init();
-////    log.info(computationGraph.summary());
-//    val loader:NativeImageLoader  = new NativeImageLoader(224, 224, 3);
-//    val image:INDArray  = loader.asMatrix(new FileInputStream(file));
-//    val scaler:DataNormalization  = new VGG16ImagePreProcessor();
-//    scaler.transform(image);
-//    val output:INDArray  = computationGraph.outputSingle(false, image);
-//    if (output.getDouble(0L) > threshold) {
-//      return PetType.CAT;
-//    }else if(output.getDouble(1L) > threshold){
-//      return PetType.DOG;
-//    }else{
-//      return PetType.NOT_KNOWN;
-//    }
+    computationGraph = model.loadModel()
+
+    computationGraph.init()
+//    log.info(computationGraph.summary());
+    val loader:NativeImageLoader  = new NativeImageLoader(224, 224, 3)
+    val image:INDArray  = loader.asMatrix(new FileInputStream(file))
+    val scaler:DataNormalization  = new VGG16ImagePreProcessor()
+    scaler.transform(image)
+    val output:INDArray  = computationGraph.outputSingle(false, image)
+    if (output.getDouble(0) > threshold) {
+      return PetType.CAT
+    }else if(output.getDouble(1) > threshold){
+      return PetType.DOG
+    }else{
+      return PetType.NOT_KNOWN
+    }
 
     PetType.DOG
   }
