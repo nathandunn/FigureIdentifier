@@ -31,7 +31,7 @@ class CatDogApp {
             result.put("result",petType.toString())
             resultList.add(result)
         }
-        println JsonOutput.prettyPrint(JsonOutput.toJson(resultList))
+//        println JsonOutput.prettyPrint(JsonOutput.toJson(resultList))
         File outputFile = new File("resources/outputFile.json")
         outputFile.delete()
         outputFile.text = JsonOutput.toJson(resultList).toString()
