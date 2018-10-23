@@ -1,8 +1,6 @@
-import groovy.json.JsonBuilder
 import groovy.json.JsonOutput
 import org.apache.commons.io.FileUtils
-import org.bbop.inca.catdog.PetType
-import org.bbop.inca.model.CatDogModel
+import org.bbop.inca.model.VG16CatDogModel
 import org.bbop.inca.predictor.CatDogPredictor
 import org.bbop.inca.predictor.Predictor
 
@@ -14,7 +12,7 @@ class CatDogApp {
 
     static void main(String[] args) {
 
-        File file = new CatDogModel().loadModel()
+        File file = new VG16CatDogModel().downloadModel()
 
 
         String[] extensions = ["jpg"]
