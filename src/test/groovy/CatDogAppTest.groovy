@@ -3,10 +3,10 @@
  */
 import spock.lang.Specification
 
-class AppTest extends Specification {
+class CatDogAppTest extends Specification {
     def "application has a greeting"() {
         setup:
-        def app = new App()
+        def app = new CatDogApp()
 
         when:
         def result = app.greeting

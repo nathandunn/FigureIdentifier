@@ -16,7 +16,7 @@ plugins {
 }
 
 // Define the main class for the application
-mainClassName = 'App'
+mainClassName = 'CatDogApp'
 //mainClassName = 'org.bbop.inca.SampleScala'
 deepleanrning4jVersion = '0.9.1'
 //deepleanrning4jVersion = '1.0.0-beta2'
