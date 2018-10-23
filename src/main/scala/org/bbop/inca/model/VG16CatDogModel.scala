@@ -22,6 +22,7 @@ class VG16CatDogModel extends Model {
 
     println( "model file "+modelFile.getAbsolutePath)
     computationGraph = ModelSerializer.restoreComputationGraph(modelFile)
+    computationGraph.init()
     computationGraph
   }
 

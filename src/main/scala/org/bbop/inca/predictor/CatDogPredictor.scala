@@ -19,8 +19,6 @@ class CatDogPredictor extends Predictor {
 
     computationGraph = model.loadModel()
 
-    computationGraph.init()
-//    log.info(computationGraph.summary());
     val loader:NativeImageLoader  = new NativeImageLoader(224, 224, 3)
     val image:INDArray  = loader.asMatrix(new FileInputStream(file))
     val scaler:DataNormalization  = new VGG16ImagePreProcessor()
@@ -33,8 +31,6 @@ class CatDogPredictor extends Predictor {
     }else{
       return PetType.NOT_KNOWN
     }
-
-    PetType.DOG
   }
 
 }

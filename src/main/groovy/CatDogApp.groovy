@@ -1,3 +1,4 @@
+import com.fasterxml.jackson.databind.util.JSONPObject
 import groovy.json.JsonOutput
 import org.apache.commons.io.FileUtils
 import org.bbop.inca.model.VG16CatDogModel
@@ -10,10 +11,9 @@ import org.bbop.inca.predictor.Predictor
 
 class CatDogApp {
 
-    static void main(String[] args) {
+    static String evaluateFigures(){
 
         File file = new VG16CatDogModel().downloadModel()
-
 
         String[] extensions = ["jpg"]
         File catDogImageResources = new File("resources/catdogsamples")
@@ -21,17 +21,26 @@ class CatDogApp {
         Predictor predictor = new CatDogPredictor()
 
 
-        def resultList = [:]
+        def resultList = []
         for (f in files) {
             def petType = predictor.predict(f, 0.5)
-            println "${f.name}  -> ${petType.toString()}"
-            resultList.put(f.name,petType.toString())
+            println "${f.absolutePath}  -> ${petType.toString()}"
+            def result = [:]
+            result.put("path",f.absolutePath)
+            result.put("name",f.name)
+            result.put("result",petType.toString())
+            resultList.add(result)
         }
         println JsonOutput.prettyPrint(JsonOutput.toJson(resultList))
         File outputFile = new File("resources/outputFile.json")
         outputFile.delete()
         outputFile.text = JsonOutput.toJson(resultList).toString()
 
+        return outputFile.text
+    }
+
+    static void main(String[] args) {
+        evaluateFigures()
     }
 
 }
