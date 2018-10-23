@@ -18,6 +18,8 @@ plugins {
 // Define the main class for the application
 mainClassName = 'App'
 //mainClassName = 'org.bbop.inca.SampleScala'
+deepleanrning4jVersion = '0.9.1'
+//deepleanrning4jVersion = '1.0.0-beta2'
 
 dependencies {
     // Use the latest Groovy version for building this library
@@ -39,10 +41,10 @@ dependencies {
 
 
 	// app depdencencies
-	compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '1.0.0-beta2'
-	compile group: 'org.deeplearning4j', name: 'deeplearning4j-nn', version: '1.0.0-beta2'
-	compile group: 'org.deeplearning4j', name: 'deeplearning4j-nlp', version: '1.0.0-beta2'
-    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: '1.0.0-beta2'
+	compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: deepleanrning4jVersion
+	compile group: 'org.deeplearning4j', name: 'deeplearning4j-nn', version: deepleanrning4jVersion
+	compile group: 'org.deeplearning4j', name: 'deeplearning4j-nlp', version: deepleanrning4jVersion
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: deepleanrning4jVersion
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
 
