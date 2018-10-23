@@ -15,20 +15,20 @@ class CatDogPredictor extends Predictor {
   var computationGraph: ComputationGraph = _
   val model: VG16CatDogModel = new VG16CatDogModel
 
-  def predict(file: File,threshold:Double):PetType = {
+  def predict(file: File, threshold: Double): PetType = {
 
     computationGraph = model.loadModel()
 
-    val loader:NativeImageLoader  = new NativeImageLoader(224, 224, 3)
-    val image:INDArray  = loader.asMatrix(new FileInputStream(file))
-    val scaler:DataNormalization  = new VGG16ImagePreProcessor()
+    val loader: NativeImageLoader = new NativeImageLoader(224, 224, 3)
+    val image: INDArray = loader.asMatrix(new FileInputStream(file))
+    val scaler: DataNormalization = new VGG16ImagePreProcessor()
     scaler.transform(image)
-    val output:INDArray  = computationGraph.outputSingle(false, image)
+    val output: INDArray = computationGraph.outputSingle(false, image)
     if (output.getDouble(0) > threshold) {
       return PetType.CAT
-    }else if(output.getDouble(1) > threshold){
+    } else if (output.getDouble(1) > threshold) {
       return PetType.DOG
-    }else{
+    } else {
       return PetType.NOT_KNOWN
     }
   }
