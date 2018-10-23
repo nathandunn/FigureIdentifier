@@ -8,8 +8,8 @@
 
 plugins {
     // Apply the groovy plugin to add support for Groovy
-    id 'groovy'
     id 'scala' // https://docs.gradle.org/current/userguide/scala_plugin.html
+    id 'groovy'
 
     // Apply the application plugin to add support for building an application
     id 'application'
@@ -71,18 +71,15 @@ repositories {
 //sourceSets.main.output.classesDir = new File(buildDir, "classes/main")
 
 
+sourceSets.main.output.classesDir = new File(buildDir, "classes/main")
+compileGroovy.dependsOn compileScala
+
+
 sourceSets {
     main {
-        scala {
-            srcDirs = ['src/main/scala', 'src/main/groovy']
-        }
         java {
-            srcDirs = []
-        }
-    }
-    test {
-        scala {
-            srcDirs = ['test/scala']
+            srcDirs   'src/main/scala'
+            srcDirs   'src/main/groovy'
         }
     }
 }
