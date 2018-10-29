@@ -25,6 +25,11 @@
     "result": "OTHER"
   },
   {
+    "path": "/Users/nathandunn/repositories/FigureIdentifier/resources/figsharesingle/4684993.JPG",
+    "name": "4684993.JPG",
+    "result": "IMAGE"
+  },
+  {
     "path": "/Users/nathandunn/repositories/FigureIdentifier/resources/figsharesingle/4681603.tif",
     "name": "4681603.tif",
     "result": "OTHER"
@@ -57,7 +62,7 @@
   {
     "path": "/Users/nathandunn/repositories/FigureIdentifier/resources/figsharesingle/3956037.tif",
     "name": "3956037.tif",
-    "result": "OTHER"
+    "result": "IMAGE"
   },
   {
     "path": "/Users/nathandunn/repositories/FigureIdentifier/resources/figsharesingle/3990861.tif",

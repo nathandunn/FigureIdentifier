@@ -2,8 +2,8 @@ package org.bbop.inca.predictor
 
 import java.io.{File, FileInputStream}
 
-import org.bbop.inca.catdog.PetType
-import org.bbop.inca.catdog.PetType.PetType
+import org.bbop.inca.figure.IndividualFigureType
+import org.bbop.inca.figure.IndividualFigureType.IndividualFigureType
 import org.bbop.inca.model.VG16CatDogModel
 import org.datavec.image.loader.NativeImageLoader
 import org.deeplearning4j.nn.graph.ComputationGraph
@@ -18,7 +18,7 @@ class SingleImagePredictor extends Predictor {
   var computationGraph: ComputationGraph = _
   val model: VG16CatDogModel = new VG16CatDogModel
 
-  def predict(file: File, threshold: Double): PetType = {
+  def predict(file: File, threshold: Double): IndividualFigureType = {
 
     computationGraph = model.loadModel()
 
@@ -28,11 +28,11 @@ class SingleImagePredictor extends Predictor {
     scaler.transform(image)
     val output: INDArray = computationGraph.outputSingle(false, image)
     if (output.getDouble(0) > threshold) {
-      return PetType.CAT
+      return IndividualFigureType.IMAGE
     } else if (output.getDouble(1) > threshold) {
-      return PetType.DOG
+      return IndividualFigureType.OTHER
     } else {
-      return PetType.NOT_KNOWN
+      return IndividualFigureType.NOT_KNOWN
     }
   }
 
