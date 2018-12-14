@@ -1,0 +1,760 @@
+File	Type	Note		Key	
+2539	I			IMAGE,	I
+3236	I			MICROSCOPE_IMAGE,	MI
+4111	D			BRAIN_IMAGE,	BI
+4599	D			CHART, // general	C
+8732	D			LINE_CHART,	LC
+8733	D			BAR_CHART,	BC
+10953	D			DIAGRAM,	D
+11106	LC			MAP,	M
+11287	D			OTHER,	O
+11840	D			NOT_KNOWN = Value	NN
+16004	D				
+16005	D				
+24641	LC				
+24642	LC				
+24968	I				
+25126	D				
+25127	D				
+25132	D				
+25133	D				
+25134	D				
+25135	D				
+25136	D				
+29207	C				
+29208	D				
+30038	D				
+30040	D				
+30041	D				
+32352	I				
+36384	C				
+37833	LC				
+39541	C				
+39897	D				
+41670	LC				
+41855	BC				
+42021	D				
+42022	O	Screen Shot			
+42023	O	Screen Shot			
+42024	O	Screen Shot			
+42025	D				
+42027	O	Screen Shot			
+42028	O	Screen Shot			
+42029	O	Screen Shot			
+42030	O	Screen Shot			
+42031	O	Screen Shot			
+44900	D	Cartoon			
+44902	BC				
+45815	I				
+46859	D				
+55631	C				
+55632	BC				
+55634	LC				
+56754	D				
+57346	LC				
+57347	I	 ProteinChip array			
+57349	I	annotated image			
+57351	I	 ProteinChip array			
+58203	LC				
+59617	D				
+62286	I	Image + BarChart			
+62291	I	Image + BarChart			
+63062	BC				
+65134	I				
+66639	I	Image + BarChart			
+70102	O	Screen Shot			
+70104	O	Screen Shot			
+71279	I				
+71365	I	Photo			
+71373	I	Photo			
+71624	O	Screen Shot			
+72812	O	Screen Shot			
+73892	BC				
+73893	I	Image + BarChart			
+73894	O				
+78267	C				
+78268	LC				
+78269	LC				
+78270	LC				
+78438	I	Electrophoregrams			
+79616	D				
+79617	D				
+79618	O	Code			
+79619	D				
+79621	D				
+79622	D				
+79623	D				
+79624	O	Code			
+79625	D				
+79626	D				
+79627	D				
+79653	D				
+79654	I	Intensity			
+79655	O	Screen Shot			
+79656	LC				
+114621	LC,LC,.LC,BC,LC,LC,M				
+127999	LC				
+128175	BC				
+143144	LC				
+150888	C				
+158870	BC				
+161882	BC				
+171992	C				
+172144	C				
+172458	BC				
+176600	D				
+176833	D				
+177075	D				
+182422	I	Image + LineChart			
+187231	I	Image + Chart			
+187371	I	Image + Chart			
+187457	D				
+187968	I	Multi-panel kind of			
+191545	BC				
+209598	M				
+209820	LC				
+209940	LC				
+211357	I	Image + BarChart			
+211577	I	Image + BarChart			
+211668	I	Image + BarChart			
+213686	C				
+220987	BC				
+226917	BC				
+237308	BC				
+240475	BC				
+249362	O	Alignment			
+252975	C				
+254011	BC				
+259053	LC				
+262329	I	Image + BarChart			
+266566	I	Image + LineChart			
+267791	LC				
+272030	LC				
+282577	BC				
+285099	LC				
+286931	BC				
+287066	BC				
+288622	BC				
+298122	BC				
+298511	D				
+304891	I				
+313885	LC				
+314654	D	Chemical Structure			
+328441	O				
+331355	D				
+331400	BC				
+332730	BC				
+333900	BC				
+335330	BC				
+336923	BC				
+344409	D				
+346779	I, BC	mix of images and bar charts			
+346964	I, BC	mix of images and bar charts			
+347120	I				
+347231	I, BC	mix of images and bar charts			
+347448	I, BC	mix of images and bar charts			
+351838	I				
+352949	BC				
+355111	BC, LC				
+357922	D, LC				
+362047	BC				
+363045	C				
+364600	C				
+364680	C				
+366066	I, BC				
+366289	I, BC				
+369355	I, BC				
+373914	M	heatmap			
+375736	I, BC				
+376214	D				
+376321	D				
+376460	D				
+377283	BC				
+380370	LC				
+380639	LC				
+391766	C				
+392160	C				
+393805	BC				
+405704	BC				
+407861	O				
+410758	MI				
+417753	D				
+421490	BC				
+422332	BC				
+424737	BC				
+429761	BC, O	flow cytometry plots			
+429954	I, MI, BC				
+430053	O, I, BC 				
+430220	I, MI, BC				
+432227	D				
+434635	BC, O				
+434693	BC				
+438309	M	heatmap			
+438735	O				
+440263	D				
+443069	O				
+449189	BC				
+449999	D				
+450271	I				
+451986	C				
+458750	BC				
+458816	BC				
+458888	BC				
+458956	BC				
+459048	BC				
+459325	BC				
+459509	BC				
+460012	D				
+460172	D				
+460294	D				
+462058	LC				
+462471	LC, I				
+465725	LC				
+465937	BC, I				
+465996	BC				
+468850	I				
+470473	LC				
+470927	BC				
+471227	C				
+471327	C				
+475188	LC, MI, BC				
+478197	BC, I				
+479237	MI, BC				
+494286	BC				
+496492	BC				
+496759	D, MI				
+496859	BC				
+502656	O				
+503378	BC				
+504971	I				
+507030	I				
+509400	I				
+515510	I				
+529427	BC				
+533741	C				
+534009	C				
+534511	D				
+540674	C, BC	flow plot, bar graph			
+540887	BC				
+543876	BC				
+545140	D				
+551624	I, LC				
+553354	BC				
+553376	I				
+553451	I				
+555751	I				
+555827	BC				
+558337	BC				
+560761	MI				
+563422	I, O, C, BC	image, flow plot, amplitude chart, BC			
+566537	BC				
+567738	BC				
+569354	MI				
+578065	D				
+584028	LC				
+584393	BC				
+588555	I				
+588626	I, LC				
+589088	I, BC				
+592811	BC				
+597869	BC				
+597941	BC				
+600587	LC				
+600703	D				
+600788	LC				
+600913	I				
+600990	D				
+601696	BC				
+601910	BC				
+605709	C				
+605826	C				
+606430	I				
+606489	I				
+608078	LC				
+608230	I				
+608330	LC				
+626710		no image file in this folder			
+627635	LC				
+631426	BC				
+638600	O				
+645088	C				
+645477		Misidentified as not split			
+645758	C				
+650068	C				
+652877	C				
+653957	O	photo of whiteboard			
+661123	LC, O, MI	flow plot			
+679524	BC				
+680926	D				
+687629	D, O, C, BC, BC	several image files in this folder			
+689579	O	table			
+697108	D				
+698423	D, BC				
+700233	C				
+706268	BC, D	two figures in this folder			
+717060	I				
+728127	BC				
+729226		there are a ton of figures in this folder			
+741365	I				
+748172	BC				
+756407	C				
+756412	C				
+757003	I				
+759350	I, MI, D, D, I	There are 5 files in this folder			
+760012	I,D				
+763778	BC				
+765028	I, BC				
+774909	BC				
+777443	C, M, O, O, O	M=heatmap, O - I am not sure what type of images these are			
+783075	LC				
+784678	O				
+791323	I				
+804793	BC				
+807656	D				
+820326	BC				
+820327	BC				
+820328	BC				
+825293	I				
+827048	M	heatmap			
+827121	BC, BC				
+831408	BC, MI				
+833427	BC, BC, BC, BC	there are 4 files in this folder			
+838114	C				
+843861	D				
+847534	D				
+847551	I				
+850720		no image file in this folder			
+858532		no image file in this folder			
+860019	C				
+860023	LC				
+868114	D, C, C, C, C, C	there are 6 files in this folder			
+871765	D				
+901583	O	screenshot			
+901587	O	screenshot			
+902998	BC, I, BC, I				
+903007	O				
+903010	O				
+903011	BC				
+904542	I, O				
+906227	I				
+906456	I, BC				
+907801	BC				
+908987	I, LC, D	3 files			
+914816	I, MI				
+917950	I, O				
+919113	I, MI, O	3 files			
+925190	BC, MI, MI				
+928643	I				
+934545	MI, C, I				
+935878	LC				
+938472	I				
+941948		Multi-panel			
+941961		Several Multi-panel			
+942670	I				
+942812		Multi-panel			
+942821		Multi-panel			
+946997	D				
+946998	LC				
+948575	I, I, I				
+954109		Multi-panel			
+954270	D				
+955119	D				
+957800		Multi-panel			
+959574		Too many figures			
+962840	C				
+964634	I				
+973872	BC				
+973884	BC				
+976937	D	DNA Code			
+988972	D	DNA Code			
+1003206		Multi-panel			
+1003207		Multi-panel			
+1003209		Multi-panel			
+1007067	BC				
+1017578	I				
+1017674	D				
+1018902	I	Picture of test tubes			
+1018923	LC,LC,LC, LC, LC, LC, LC, LC, LC, LC, LC				
+1021811	BC				
+1022296	I				
+1022420	D				
+1022633	I				
+1026968	BC				
+1032154	LC, BC, O, C				
+1039259		Multi-panel			
+1039260	LC				
+1039264	C				
+1040801		There are 14 files in here, and some are multi-panel			
+1041039		Multi-panel			
+1044402		Multi-panel			
+1044407	BC				
+1044864		Multi-panel			
+1049244	BC, BC, BC, BC, BC, C				
+1049654	C				
+1049657	C				
+1058809	C				
+1059558	I				
+1060655	D				
+1061158	LC				
+1064879	D				
+1065234		Muti-panel			
+1065936		Muti-panel			
+1068714	I, BC, BC				
+1071622		Cannot open file			
+1072554	I				
+1074791		Muti-panel			
+1074795		Muti-panel			
+1075588	BC				
+1078276	LC				
+1083104		Muti-panel			
+1091113	D				
+1091117		Muti-panel			
+1091997		Muti-panel			
+1092002	I				
+1093227		Muti-panel			
+1093255		Muti-panel			
+1093302	I, Multi-panel, Multi-panel, LC	Nathan - not sure how to annotate this one			
+1107095	D				
+1107515		Muti-panel			
+1113479		Muti-panel			
+1114078		Muti-panel			
+1114081		Muti-panel			
+1114083		Muti-panel			
+1114085		Muti-panel			
+1121066	I				
+1121068	I				
+1121431	LC				
+1121638	I	Muti-panel			
+1126750	C, C	2 figures, both Muti-panel			
+1135335	BC				
+1135336	BC				
+1135337	BC				
+1143100		Muti-panel			
+1155710	I				
+1158375	I				
+1163113	D				
+1163115	D				
+1175590	O				
+1181546	O, O, O, C, O, I	Sequences, sequences, sequences, multi-panel, sequences, image			
+1182421	BC	All figures are Multi-panel except S4			
+1188195		Multi-panel			
+1191255		Multi-panel			
+1193849	M	heat map			
+1197451	D				
+1199097	I				
+1199169	C	Multi-panel			
+1202914	C				
+1205858	D				
+1211049	D, D, D, LC				
+1220522	LC, O, O	Multi-panel, Flow plots, Flow plots - multi-panel			
+1223993	D, C 	C is multi-panel			
+1228830	O	Table			
+1232091		Multi-panel figures in powerpoint			
+1234746		Multi-panel			
+1234932	D				
+1243947	C				
+1245214		Multi-panel			
+1245215		Multi-panel			
+1248344		Multi-panel			
+1250308	I, I, I, C	multi-panel			
+1251517		multi-panel			
+1255913	C, I, I	S1 has an embedded bar chart and S3 is multi-panel			
+1269647	I				
+1282838	MI, C				
+1282976		multi-panel			
+1294491	LC				
+1296623		multi-panel			
+1296632	D				
+1300495		multi-panel			
+1305081	D				
+1315533		multi-panel			
+1318349		multi-panel			
+1320080		multi-panel			
+1329173		multi-panel			
+1329176	I, C	S3 is an image, S5 is a C, others are multi-panel			
+1341732	LC				
+1341734	LC				
+1343484	LC				
+1351060	O				
+1352296		multi-panel			
+1352297	BC				
+1354727	BC				
+1354731		multi-panel			
+1357703	I, D, D	S2 is an image, S3 and S4 are D			
+1359174		multi-panel			
+1365857		multi-panel			
+1366422	LC, multi-panel, C	S2 is multi-panel			
+1366596	D				
+1386166		multi-panel			
+1395036	BC				
+1396639		multi-panel			
+1398279	BC				
+1406012	C, BC	S1=C, S6=BC, others are multi-panel			
+1408103	D, D				
+1410578	O, O	S5-S10=O (not sure what this is), others are multi-panel			
+1413206		multi-panel			
+1422321	I				
+1423680		multi-panel			
+1426351	D, D, I	S1=multi-panel, S2-3=D, S4=I			
+1426433		multi-panel			
+1432456	I, C 	S2=multi-panel			
+1432777		no image fle			
+1434160	D				
+1435440	D, M	S1, S3-S6, S8-S9=multi-panel, S2=D, S7=M			
+1437963		Multi-panel			
+1440224		Multi-panel			
+1444194	D	All are multi-panel except S4=D, 			
+1445506		S1_Fig=D, S1_Fig=multi-panel, S2_Fig=BC, S2_Fig=Multi-panel, S3_Fig=BC, S4_Fig=C. Note, some files have the same name			
+1450963	D				
+1451494		Multi-panel			
+1454670		Multi-panel			
+1461038		Multi-panel			
+1465818		Multi-panel			
+1465972	LC				
+1465977		Multi-panel			
+1465984	BC				
+1466786		This is a PDF			
+1471326		S1=multi-panel, S2=BC, S3=LC, S4=BC, S5=multi-panel, S6=multi-panel			
+1474499	D				
+1475470		Multi-panel			
+1476363		no image file			
+1478370		Multi-panel			
+1480248		Multi-panel			
+1480335		Multi-panel			
+1482294		Multi-panel			
+1485097	I				
+1493295		Multi-panel			
+1494994		Multi-panel			
+1495977		Multi-panel			
+1496082	D				
+1501324	D				
+1515246	D				
+1522900	LC				
+1522903		multi-panel			
+1522905		multi-panel			
+1522918		multi-panel			
+1523154		no image file			
+1526725	LC				
+1532341		multi-panel			
+1532343		multi-panel			
+1539774		multi-panel			
+1541263		no image file			
+1547703	BC				
+1548950	D				
+1553053	M	heatmap			
+1557253		multi-panel			
+1557512		multi-panel			
+1557897		no image file			
+1566526		multi-panel			
+1566606		multi-panel			
+1567419		no image file			
+1567953		no image file			
+1578212	O	mass spec(?) and Image			
+1580594		multi-panel			
+1589522		multi-panel			
+1590895		no image file			
+1593036		no image file			
+1593984		no image file			
+1596691		multi-panel			
+1599961		multi-panel			
+1600081	D				
+1602351	BC				
+1612049		multi-panel			
+1622038	D				
+1623930	D				
+1624838		multi-panel			
+1625366	D				
+1629579		multi-panel			
+1629582		multi-panel			
+1632794	I				
+1633883		S1=multi-panel, S2=D			
+1634620		multi-panel			
+1635406	D				
+1639420	BC				
+1640110		multi-panel			
+1640284		multi-panel			
+1641820		multi-panel			
+2015607	I				
+2015613	I				
+2015619	I				
+2022090		this is a PDF file			
+2032818		this is a PDF file			
+2063853	D				
+2081416		this is a PDF file			
+2161657		this is a PDF file			
+2389504		no image file			
+2395216		this is a PDF file			
+2444011		this is a PDF file			
+2477407		no image file			
+2510914		this is a PDF file			
+2534728		no image file			
+2558260		no image file			
+2575273	D				
+2585329		multi-panel			
+2602138		multi-panel			
+2602561	BC				
+2667754	LC				
+2667781	LC				
+2667793	LC				
+2667805		multi-panel			
+2667820		multi-panel			
+2667832		multi-panel			
+2667847	D				
+2680261	I				
+2730421	D				
+3024061		no image file			
+3080182	D				
+3085819	D				
+3090979		no image file			
+3094306	D				
+3108802	BC				
+3117286		this is a pdf file			
+3139459	D				
+3154498	BC				
+3154510		multi-panel			
+3154516	BC				
+3154528		multi-panel			
+3164596		no image file			
+3177352	D				
+3183835		multi-panel			
+3195631		multi-panel			
+3197494	LC				
+3209347		this is a pdf file			
+3217792		multi-panel			
+3219067		this is a pdf file			
+3372334	O	I'm not sure what this is			
+3375439		no image file			
+3402709		multi-panel			
+3433457		no image file			
+3440249	BC				
+3450638		multi-panel			
+3482348	O	Table			
+3483737		multi-panel			
+3483767		multi-panel			
+3545829		no image file			
+3560115		no image file			
+3577536		multi-panel			
+3608298	I				
+3756096		no image file			
+3759198		S1=multi-panel, S2=multi-panel, S3=D, S4=C			
+3771855	LC				
+3796098		this is a pdf file			
+3814536	D				
+3815571		no image file			
+3838470		no image file			
+3838809		multi-panel			
+3845850	LC				
+3845865	LC				
+3845877	LC				
+3854157	I				
+3855456		multi-panel			
+3861672		multi-panel			
+3868611	D				
+3876966		no image file			
+3877185	I				
+3878838		no image file			
+3883932		no image file			
+3888738		multi-panel			
+3892971	LC				
+3893004	LC				
+3908043	I				
+3908094	I				
+3913635		multi-panel			
+3918726	I				
+3936795		no image file			
+3949383		no image file			
+3956037		multi-panel			
+3976701		multi-panel			
+3990861	M				
+4002429	BC				
+4012035		multi-panel			
+4013187	BC				
+4015815		no image file			
+4017420		multi-panel			
+4017444		multi-panel			
+4017456		multi-panel			
+4019406		multi-panel			
+4022346		no image file			
+4031580		multi-panel			
+4031613		multi-panel			
+4031637		multi-panel			
+4031673		multi-panel			
+4031709		multi-panel			
+4031745		multi-panel			
+4040535		this is a pdf file			
+4045446		multi-panel			
+4051293	LC				
+4095555		no image file			
+4096890		no image file			
+4108101		no image file			
+4135908		no image file			
+4141362	LC				
+4163007		no image file			
+4214214		no image file			
+4236407		this is a pdf file			
+4239497		this is a pdf file			
+4240865	I				
+4255475	LC				
+4279031		S1=multi-panel, S2=LC, S3=multi-panel			
+4281428		no image file			
+4303742		multi-panel			
+4309613		this is a pdf file			
+4329089		no image file			
+4335938		no image file			
+4337102		multi-panel			
+4347950	I				
+4351313		no image file			
+4357712	M	Heatmap			
+4360646		no image file			
+4373495		no image file			
+4376699		no image file			
+4392488	BC				
+4396967		no image file			
+4404113		no image file			
+4404377	BC				
+4409207		multi-panel			
+4429571		no image file			
+4448120	D				
+4461821	BC				
+4463210		multi-panel			
+4466621		no image file			
+4479080	D				
+4479095	BC				
+4479116		multi-panel			
+4479149	BC				
+4479167	BC				
+4484162	D				
+4488416		no image file			
+4501106		no image file			
+4514801	I				
+4515845		no image file			
+4531310		multi-panel			
+4533989		multi-panel			
+4558264		no image file			
+4561486	D				
+4563085	D				
+4568005		no image file			
+4569445		no image file			
+4577107		multi-panel			
+4586221		no image file			
+4596211	BC				
+4599298	D				
+4613080		multi-panel			
+4614256		no image file			
+4626580	BC				
+4626595	BC				
+4626613	BC				
+4626619	BC				
+4638847	D				
+4644211		multi-panel			
+4647430	BC				
+4648987		no image file in the folder			
+4658212		no image file in the folder			
+4662379	I				
+4673854	LC				
+4674571	D				
+4681603	D				
+4684993	I				
+5969383		no image file in the folder			
+6693305	LC, LC, LC, BC, MI	multiple image files in this folder, I annotated them respectively			
+7007153		no image file in the folder			
