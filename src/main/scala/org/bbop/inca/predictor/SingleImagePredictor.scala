@@ -27,9 +27,9 @@ class SingleImagePredictor extends Predictor {
     val scaler: DataNormalization = new VGG16ImagePreProcessor()
     scaler.transform(image)
     val output: INDArray = computationGraph.outputSingle(false, image)
-    if (output.getDouble(0) > threshold) {
+    if (output.getDouble(0L) > threshold) {
       return IndividualFigureType.IMAGE
-    } else if (output.getDouble(1) > threshold) {
+    } else if (output.getDouble(1L) > threshold) {
       return IndividualFigureType.OTHER
     } else {
       return IndividualFigureType.NOT_KNOWN

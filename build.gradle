@@ -6,13 +6,37 @@
  * user guide available at https://docs.gradle.org/4.10/userguide/tutorial_groovy_projects.html
  */
 
-plugins {
-    // Apply the groovy plugin to add support for Groovy
-    id 'scala' // https://docs.gradle.org/current/userguide/scala_plugin.html
-    id 'groovy'
+buildscript {
+    ext {
+        dl4j_version = "1.0.0-beta3"
+        nd4j_version = "1.0.0-beta3"
+//        kotlin_version = "1.2.31"
+    }
+    repositories {
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+        mavenCentral()
+    }
+//    dependencies {
+//        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
+//    }
+}
 
-    // Apply the application plugin to add support for building an application
-    id 'application'
+//plugins {
+//    // Apply the groovy plugin to add support for Groovy
+//    id 'scala' // https://docs.gradle.org/current/userguide/scala_plugin.html
+//    id 'groovy'
+//
+//    // Apply the application plugin to add support for building an application
+//    id 'application'
+//}
+
+apply plugin: "scala"
+apply plugin: "groovy"
+apply plugin: "application"
+
+repositories {
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+    mavenCentral()
 }
 
 // Define the main class for the application
@@ -20,6 +44,8 @@ mainClassName = 'CatDogApp'
 //mainClassName = 'org.bbop.inca.SampleScala'
 //deepLearningVersion="0.9.1"
 //deepleanrning4jVersion = '1.0.0-beta2'
+//nd4j.version = '1.0.0-beta3'
+//dl4j.version = '1.0.0-beta3'
 
 dependencies {
     // Use the latest Groovy version for building this library
@@ -31,7 +57,6 @@ dependencies {
     compile 'org.scala-lang:scala-library:2.11.12'
     testCompile 'org.scalatest:scalatest_2.11:3.0.0'
     testCompile 'junit:junit:4.12'
-    testCompile group: 'org.nd4j', name: 'nd4j-native', version: '0.9.1'
 
 
     testRuntime 'org.scala-lang.modules:scala-xml_2.11:1.1.0'
@@ -39,17 +64,31 @@ dependencies {
 //    zinc 'com.typesafe.zinc:zinc:0.3.9'
 
     // app depdencencies
-    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '0.9.1'
+//    testCompile group: 'org.nd4j', name: 'nd4j-native', version: '0.9.1'
+//    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: '0.9.1'
+//    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: '0.9.1'
+//    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: '0.9.1'
+
+
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version:"${dl4j_version}"
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version:"${dl4j_version}"
+    compile group: 'org.deeplearning4j', name: 'deeplearning4j-ui_2.11', version: "${dl4j_version}"
+//    testCompile group: 'org.nd4j', name: 'nd4j-native', version: "${nd4j_version}"
+    compile group: 'org.nd4j', name: 'nd4j-native-platform', version:"${nd4j_version}"
+    compile group: 'org.nd4j', name: 'nd4j-api', version: "${nd4j_version}"
+
+
 //    compile group: 'org.deeplearning4j', name: 'deeplearning4j-nn', version: '0.9.1'
 //    compile group: 'org.deeplearning4j', name: 'deeplearning4j-nlp', version: '0.9.1'
-    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: '0.9.1'
-    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: '0.9.1'
+
     compile group: 'com.typesafe.play', name: 'play-json_2.12', version: '2.6.10'
 //    compile group: 'org.deeplearning4j', name: 'deeplearning4j-core', version: deeplearningversion
 //    compile group: 'org.deeplearning4j', name: 'deeplearning4j-n', version: deeplearningversion
 //    compile group: 'org.deeplearning4j', name: 'deeplearning4j-nlp', version: deeplearningversion
 //    compile group: 'org.deeplearning4j', name: 'deeplearning4j-zoo', version: deeplearningversion
-//    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: deeplearningversion
+//    compile group: 'org.nd4j', name: 'nd4j-native-platform', version: dl4j_version
+//    compile group: 'org.nd4j', name: 'nd4j-api', version: '0.0.3'
+
 
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
     compile group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.25'
